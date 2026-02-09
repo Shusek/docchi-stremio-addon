@@ -12,8 +12,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application
 COPY . .
 
-# Initialize submodules
-RUN git submodule update --init --recursive
 
 # Create data directory for TinyDB
 RUN mkdir -p /app/data
